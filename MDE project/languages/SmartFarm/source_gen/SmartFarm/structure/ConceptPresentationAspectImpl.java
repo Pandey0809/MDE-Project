@@ -12,12 +12,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_AI;
   private ConceptPresentation props_Camera;
   private ConceptPresentation props_Crate;
-  private ConceptPresentation props_CrateList;
   private ConceptPresentation props_Crop;
   private ConceptPresentation props_Drone;
   private ConceptPresentation props_Farm;
   private ConceptPresentation props_Light;
   private ConceptPresentation props_Sensor;
+  private ConceptPresentation props_Soil;
+  private ConceptPresentation props_Temperature;
+  private ConceptPresentation props_Water;
 
   @Override
   @Nullable
@@ -41,17 +43,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Crate:
         if (props_Crate == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("crate");
+          cpb.presentationByName();
           props_Crate = cpb.create();
         }
         return props_Crate;
-      case LanguageConceptSwitch.CrateList:
-        if (props_CrateList == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_CrateList = cpb.create();
-        }
-        return props_CrateList;
       case LanguageConceptSwitch.Crop:
         if (props_Crop == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -87,6 +82,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Sensor = cpb.create();
         }
         return props_Sensor;
+      case LanguageConceptSwitch.Soil:
+        if (props_Soil == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Soil");
+          props_Soil = cpb.create();
+        }
+        return props_Soil;
+      case LanguageConceptSwitch.Temperature:
+        if (props_Temperature == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Temperature");
+          props_Temperature = cpb.create();
+        }
+        return props_Temperature;
+      case LanguageConceptSwitch.Water:
+        if (props_Water == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Water");
+          props_Water = cpb.create();
+        }
+        return props_Water;
     }
     return null;
   }

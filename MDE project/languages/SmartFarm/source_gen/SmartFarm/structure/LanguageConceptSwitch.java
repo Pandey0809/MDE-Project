@@ -12,24 +12,28 @@ public final class LanguageConceptSwitch {
   public static final int AI = 0;
   public static final int Camera = 1;
   public static final int Crate = 2;
-  public static final int CrateList = 3;
-  public static final int Crop = 4;
-  public static final int Drone = 5;
-  public static final int Farm = 6;
-  public static final int Light = 7;
-  public static final int Sensor = 8;
+  public static final int Crop = 3;
+  public static final int Drone = 4;
+  public static final int Farm = 5;
+  public static final int Light = 6;
+  public static final int Sensor = 7;
+  public static final int Soil = 8;
+  public static final int Temperature = 9;
+  public static final int Water = 10;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL);
     builder.put(0x4868eb0de61d7258L, AI);
     builder.put(0x4868eb0de61d6acaL, Camera);
     builder.put(0x4868eb0de61d6acdL, Crate);
-    builder.put(0x4868eb0de62a680dL, CrateList);
     builder.put(0x4868eb0de61d6aa6L, Crop);
     builder.put(0x4868eb0de61d6ac7L, Drone);
     builder.put(0x4868eb0de61d7269L, Farm);
     builder.put(0x4868eb0de61d6a92L, Light);
     builder.put(0x4868eb0de61c82e0L, Sensor);
+    builder.put(0x4ba697e934904be0L, Soil);
+    builder.put(0x4ba697e934904bdfL, Temperature);
+    builder.put(0x4ba697e934904be1L, Water);
     myIndex = builder.seal();
   }
 

@@ -46,6 +46,11 @@
         <property id="5258059200641510854" name="message" index="16N$OU" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
     <language id="517077fd-e44f-4338-a475-1d29781dfdb8" name="jetbrains.mps.lang.feedback.skeleton">
       <concept id="7291380803381892615" name="jetbrains.mps.lang.feedback.skeleton.structure.FeedbackPerConceptRoot" flags="ng" index="3QByoM">
         <reference id="7188575577281228125" name="concept" index="3Z9TSV" />
@@ -77,6 +82,21 @@
       <node concept="16I2mz" id="4xCUKRA9Lgz" role="16N$OO">
         <node concept="16N$OT" id="4xCUKRA9LgJ" role="16I2mt">
           <property role="16N$OU" value="camera value should be more than 0" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3QByoM" id="4xCUKRAnCKn">
+    <property role="3GE5qa" value="crate" />
+    <ref role="3Z9TSV" to="hp5j:4xCUKRA7mFd" resolve="Crate" />
+    <node concept="3QByp$" id="4xCUKRAnCKo" role="3QBEN7">
+      <node concept="1GjwBS" id="4xCUKRAnCJw" role="3JXyrO">
+        <ref role="sa$J1" to="fudv:1mFJTG7e$j" />
+        <ref role="1Gj$d9" to="hp5j:4xCUKRA9ZjJ" resolve="id" />
+      </node>
+      <node concept="16I2mz" id="4xCUKRAnCKs" role="16N$OO">
+        <node concept="16N$OT" id="4xCUKRAnCKt" role="16I2mt">
+          <property role="16N$OU" value="&quot;the value should be greater than 0" />
         </node>
       </node>
     </node>

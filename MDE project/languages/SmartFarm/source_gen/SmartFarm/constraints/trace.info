@@ -13,6 +13,12 @@
     <file name="ConstraintsAspectDescriptor.java">
       <unit at="13,0,33,0" name="SmartFarm.constraints.ConstraintsAspectDescriptor" />
     </file>
+    <file name="GeneratedFeedbackAspectConstraints.java">
+      <unit at="10,0,17,0" name="SmartFarm.constraints.GeneratedFeedbackAspectConstraints" />
+    </file>
+    <file name="GeneratedRulesConstraintsAspect.java">
+      <unit at="14,0,28,0" name="SmartFarm.constraints.GeneratedRulesConstraintsAspect" />
+    </file>
   </root>
   <root nodeRef="r:749842ab-8d39-4035-bf44-90b85f30be8a(SmartFarm.constraints)/5217678613236642238">
     <file name="Farm_Constraints.java">
@@ -160,6 +166,92 @@
       <unit id="5217678613237134616" at="51,0,54,0" name="SmartFarm.constraints.Camera_Constraints$PROPS" />
       <unit id="5217678613237134617" at="24,0,40,0" name="SmartFarm.constraints.Camera_Constraints$Camerareq_Property" />
       <unit id="5217678613237134616" at="19,0,55,0" name="SmartFarm.constraints.Camera_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:749842ab-8d39-4035-bf44-90b85f30be8a(SmartFarm.constraints)/5217678613241026517">
+    <file name="Crop_ConstraintRules.java">
+      <node id="5217678613241026517" at="23,0,24,0" concept="6" trace="CONCEPT" />
+      <node id="5217678613241026524" at="25,0,26,0" concept="6" trace="check_id5217678613241026524" />
+      <node id="5217678613241039559" at="26,0,27,0" concept="6" trace="check_id5217678613241039559" />
+      <node id="5217678613241026517" at="28,0,29,0" concept="6" trace="RULES" />
+      <node id="5217678613241026517" at="32,43,33,17" concept="5" />
+      <node id="5217678613241026524" at="37,0,38,0" concept="6" trace="SOURCE_NODE_REF" />
+      <node id="5217678613241026524" at="38,0,39,0" concept="6" trace="ID_Length1" />
+      <node id="5217678613241026524" at="40,27,41,84" concept="8" />
+      <node id="5217678613241026524" at="45,63,46,103" concept="5" />
+      <node id="5217678613241026524" at="50,67,51,18" concept="5" />
+      <node id="5217678613241039559" at="56,0,57,0" concept="6" trace="SOURCE_NODE_REF" />
+      <node id="5217678613241039559" at="57,0,58,0" concept="6" trace="ID_Length2" />
+      <node id="5217678613241039559" at="59,27,60,84" concept="8" />
+      <node id="5217678613241039559" at="64,63,65,101" concept="5" />
+      <node id="5217678613241039559" at="69,67,70,18" concept="5" />
+      <node id="5217678613241026517" at="74,38,75,19" concept="8" />
+      <node id="5217678613241026517" at="79,0,80,0" concept="6" trace="croptype$rpl6" />
+      <node id="5217678613241026524" at="40,0,43,0" concept="0" trace="Rule_Length1#()V" />
+      <node id="5217678613241039559" at="59,0,62,0" concept="0" trace="Rule_Length2#()V" />
+      <node id="5217678613241026517" at="74,0,77,0" concept="0" trace="Crop_ConstraintRules#()V" />
+      <node id="5217678613241026524" at="44,0,48,0" concept="3" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="5217678613241026524" at="49,0,53,0" concept="3" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="5217678613241039559" at="63,0,67,0" concept="3" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="5217678613241039559" at="68,0,72,0" concept="3" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="5217678613241026517" at="30,0,35,0" concept="3" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="5217678613241026517" at="32,43,33,17" />
+      <scope id="5217678613241026524" at="40,27,41,84" />
+      <scope id="5217678613241026524" at="45,63,46,103" />
+      <scope id="5217678613241026524" at="50,67,51,18" />
+      <scope id="5217678613241039559" at="59,27,60,84" />
+      <scope id="5217678613241039559" at="64,63,65,101" />
+      <scope id="5217678613241039559" at="69,67,70,18" />
+      <scope id="5217678613241026517" at="74,38,75,19" />
+      <scope id="5217678613241026524" at="40,0,43,0" />
+      <scope id="5217678613241039559" at="59,0,62,0" />
+      <scope id="5217678613241026517" at="74,0,77,0" />
+      <scope id="5217678613241026524" at="44,0,48,0">
+        <var name="context" id="5217678613241026524" />
+      </scope>
+      <scope id="5217678613241026524" at="49,0,53,0">
+        <var name="context" id="5217678613241026524" />
+      </scope>
+      <scope id="5217678613241039559" at="63,0,67,0">
+        <var name="context" id="5217678613241039559" />
+      </scope>
+      <scope id="5217678613241039559" at="68,0,72,0">
+        <var name="context" id="5217678613241039559" />
+      </scope>
+      <scope id="5217678613241026517" at="30,0,35,0" />
+      <unit id="5217678613241026517" at="78,0,81,0" name="SmartFarm.constraints.Crop_ConstraintRules$PROPS" />
+      <unit id="5217678613241026524" at="36,0,54,0" name="SmartFarm.constraints.Crop_ConstraintRules$Rule_Length1" />
+      <unit id="5217678613241039559" at="55,0,73,0" name="SmartFarm.constraints.Crop_ConstraintRules$Rule_Length2" />
+      <unit id="5217678613241026517" at="22,0,82,0" name="SmartFarm.constraints.Crop_ConstraintRules" />
+    </file>
+    <file name="Crop_ConstraintsFeedback.java">
+      <node id="5217678613241026517" at="20,0,21,0" concept="6" trace="CONCEPT" />
+      <node id="5217678613241026522" at="25,73,26,82" concept="5" />
+      <node id="5217678613241039558" at="32,73,33,80" concept="5" />
+      <node id="5217678613241026517" at="37,0,38,0" concept="6" trace="PROVIDERS" />
+      <node id="5217678613241026517" at="39,37,40,19" concept="8" />
+      <node id="5217678613241026517" at="45,58,46,30" concept="5" />
+      <node id="5217678613241026517" at="39,0,42,0" concept="0" trace="Crop_ConstraintsFeedback#()V" />
+      <node id="5217678613241026522" at="23,0,28,0" concept="3" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="5217678613241039558" at="30,0,35,0" concept="3" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="5217678613241026517" at="43,0,48,0" concept="3" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="5217678613241026522" at="22,0,29,0" concept="6" trace="MSGPROVIDER_WhenConstraintRuleFails_wcw0d2_a" />
+      <node id="5217678613241039558" at="29,0,36,0" concept="6" trace="MSGPROVIDER_WhenConstraintRuleFails_wcw0d2_b" />
+      <scope id="5217678613241026522" at="25,73,26,82" />
+      <scope id="5217678613241039558" at="32,73,33,80" />
+      <scope id="5217678613241026517" at="39,37,40,19" />
+      <scope id="5217678613241026517" at="45,58,46,30" />
+      <scope id="5217678613241026517" at="39,0,42,0" />
+      <scope id="5217678613241026522" at="23,0,28,0">
+        <var name="context" id="5217678613241026522" />
+      </scope>
+      <scope id="5217678613241039558" at="30,0,35,0">
+        <var name="context" id="5217678613241039558" />
+      </scope>
+      <scope id="5217678613241026517" at="43,0,48,0" />
+      <unit id="5217678613241026522" at="22,111,28,3" name="SmartFarm.constraints.Crop_ConstraintsFeedback$1" />
+      <unit id="5217678613241039558" at="29,111,35,3" name="SmartFarm.constraints.Crop_ConstraintsFeedback$2" />
+      <unit id="5217678613241026517" at="19,0,49,0" name="SmartFarm.constraints.Crop_ConstraintsFeedback" />
     </file>
   </root>
 </debug-info>

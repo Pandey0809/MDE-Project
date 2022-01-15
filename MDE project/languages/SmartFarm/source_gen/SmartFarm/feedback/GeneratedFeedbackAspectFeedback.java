@@ -11,6 +11,6 @@ public final class GeneratedFeedbackAspectFeedback implements FeedbackAspect {
   @NotNull
   @Override
   public Stream<FeedbackPerConceptDescriptor> getPerConceptDescriptors() {
-    return Stream.of(new Drone_FeedbackFeedback(), new Camera_FeedbackFeedback());
+    return Stream.of(new Drone_FeedbackFeedback(), new Camera_FeedbackFeedback(), new Crate_FeedbackFeedback());
   }
 }

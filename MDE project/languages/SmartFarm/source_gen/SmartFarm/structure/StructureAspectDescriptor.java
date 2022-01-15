@@ -21,16 +21,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAI = createDescriptorForAI();
   /*package*/ final ConceptDescriptor myConceptCamera = createDescriptorForCamera();
   /*package*/ final ConceptDescriptor myConceptCrate = createDescriptorForCrate();
-  /*package*/ final ConceptDescriptor myConceptCrateList = createDescriptorForCrateList();
   /*package*/ final ConceptDescriptor myConceptCrop = createDescriptorForCrop();
   /*package*/ final ConceptDescriptor myConceptDrone = createDescriptorForDrone();
   /*package*/ final ConceptDescriptor myConceptFarm = createDescriptorForFarm();
   /*package*/ final ConceptDescriptor myConceptLight = createDescriptorForLight();
   /*package*/ final ConceptDescriptor myConceptSensor = createDescriptorForSensor();
+  /*package*/ final ConceptDescriptor myConceptSoil = createDescriptorForSoil();
+  /*package*/ final ConceptDescriptor myConceptTemperature = createDescriptorForTemperature();
+  /*package*/ final ConceptDescriptor myConceptWater = createDescriptorForWater();
   /*package*/ final EnumerationDescriptor myEnumerationAItype = new EnumerationDescriptor_AItype();
-  /*package*/ final EnumerationDescriptor myEnumerationCropType = new EnumerationDescriptor_CropType();
   /*package*/ final EnumerationDescriptor myEnumerationLightType = new EnumerationDescriptor_LightType();
-  /*package*/ final EnumerationDescriptor myEnumerationSensorType = new EnumerationDescriptor_SensorType();
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeCrateid = new ConstrainedStringDatatypeDescriptorImpl(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de61d2698L, "Crateid", "r:3d8221a8-bf28-472f-a550-7226d0477236(SmartFarm.structure)/5217678613236491928", "[C][1-9][1-9]");
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -46,7 +46,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAI, myConceptCamera, myConceptCrate, myConceptCrateList, myConceptCrop, myConceptDrone, myConceptFarm, myConceptLight, myConceptSensor);
+    return Arrays.asList(myConceptAI, myConceptCamera, myConceptCrate, myConceptCrop, myConceptDrone, myConceptFarm, myConceptLight, myConceptSensor, myConceptSoil, myConceptTemperature, myConceptWater);
   }
 
   @Override
@@ -59,8 +59,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptCamera;
       case LanguageConceptSwitch.Crate:
         return myConceptCrate;
-      case LanguageConceptSwitch.CrateList:
-        return myConceptCrateList;
       case LanguageConceptSwitch.Crop:
         return myConceptCrop;
       case LanguageConceptSwitch.Drone:
@@ -71,6 +69,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptLight;
       case LanguageConceptSwitch.Sensor:
         return myConceptSensor;
+      case LanguageConceptSwitch.Soil:
+        return myConceptSoil;
+      case LanguageConceptSwitch.Temperature:
+        return myConceptTemperature;
+      case LanguageConceptSwitch.Water:
+        return myConceptWater;
       default:
         return null;
     }
@@ -78,7 +82,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationAItype, myEnumerationCropType, myEnumerationLightType, myEnumerationSensorType, myCSDatatypeCrateid);
+    return Arrays.asList(myEnumerationAItype, myEnumerationLightType, myCSDatatypeCrateid);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -105,25 +109,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForCrate() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SmartFarm", "Crate", 0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de61d6acdL);
-    b.class_(false, false, false);
+    b.class_(false, false, true);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:3d8221a8-bf28-472f-a550-7226d0477236(SmartFarm.structure)/5217678613236509389");
     b.version(2);
     b.property("id", 0x4868eb0de627f4efL).type(MetaIdFactory.dataTypeId(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de61d2698L)).origin("5217678613237200111").done();
-    b.property("row", 0x4868eb0de61d6aceL).type(PrimitiveTypeId.INTEGER).origin("5217678613236509390").done();
-    b.property("column", 0x4868eb0de61d6ad0L).type(PrimitiveTypeId.INTEGER).origin("5217678613236509392").done();
     b.aggregate("crop", 0x4868eb0de627f4e4L).target(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de61d6aa6L).optional(false).ordered(true).multiple(false).origin("5217678613237200100").done();
-    b.aggregate("sensor", 0x4868eb0de627f4e6L).target(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de61c82e0L).optional(true).ordered(true).multiple(true).origin("5217678613237200102").done();
+    b.aggregate("sensor", 0x4868eb0de627f4e6L).target(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de61c82e0L).optional(false).ordered(true).multiple(false).origin("5217678613237200102").done();
     b.aggregate("light", 0x4868eb0de627f4f3L).target(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de61d6a92L).optional(true).ordered(true).multiple(true).origin("5217678613237200115").done();
     b.alias("crate");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForCrateList() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SmartFarm", "CrateList", 0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de62a680dL);
-    b.class_(false, false, true);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:3d8221a8-bf28-472f-a550-7226d0477236(SmartFarm.structure)/5217678613237360653");
-    b.version(2);
-    b.aggregate("crate", 0x4868eb0de62a680eL).target(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de61d6acdL).optional(true).ordered(true).multiple(true).origin("5217678613237360654").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForCrop() {
@@ -131,7 +125,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:3d8221a8-bf28-472f-a550-7226d0477236(SmartFarm.structure)/5217678613236509350");
     b.version(2);
-    b.property("croptype", 0x4868eb0de61d6aa7L).type(MetaIdFactory.dataTypeId(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de61d6aacL)).origin("5217678613236509351").done();
+    b.property("croptype", 0x4868eb0de61d6aa7L).type(PrimitiveTypeId.STRING).origin("5217678613236509351").done();
     b.alias("crop");
     return b.create();
   }
@@ -154,7 +148,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("norow", 0x4868eb0de61edcfaL).type(PrimitiveTypeId.INTEGER).origin("5217678613236604154").done();
     b.property("nocol", 0x4868eb0de61edcfdL).type(PrimitiveTypeId.INTEGER).origin("5217678613236604157").done();
     b.aggregate("ai", 0x4868eb0de61d7baaL).target(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de61d7258L).optional(true).ordered(true).multiple(true).origin("5217678613236513706").done();
-    b.aggregate("camera", 0x4868eb0de61d7bbcL).target(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de61d6acaL).optional(true).ordered(true).multiple(false).origin("5217678613236513724").done();
+    b.aggregate("camera", 0x4868eb0de61d7bbcL).target(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de61d6acaL).optional(false).ordered(true).multiple(false).origin("5217678613236513724").done();
     b.aggregate("drone", 0x4868eb0de61d7bd1L).target(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de61d6ac7L).optional(false).ordered(true).multiple(false).origin("5217678613236513745").done();
     b.aggregate("crate", 0x4868eb0de61e608aL).target(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de61d6acdL).optional(true).ordered(true).multiple(false).origin("5217678613236572298").done();
     return b.create();
@@ -173,8 +167,40 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:3d8221a8-bf28-472f-a550-7226d0477236(SmartFarm.structure)/5217678613236450016");
     b.version(2);
-    b.property("Sensortype", 0x4868eb0de61c82e1L).type(MetaIdFactory.dataTypeId(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de61c82e3L)).origin("5217678613236450017").done();
+    b.aggregate("soilsensor", 0x4ba697e934904be2L).target(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4ba697e934904be0L).optional(true).ordered(true).multiple(false).origin("5451211426843610082").done();
+    b.aggregate("tempsensor", 0x4ba697e934904be4L).target(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4ba697e934904bdfL).optional(true).ordered(true).multiple(false).origin("5451211426843610084").done();
+    b.aggregate("watersensor", 0x4ba697e934904be7L).target(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4ba697e934904be1L).optional(true).ordered(true).multiple(false).origin("5451211426843610087").done();
     b.alias("sensor");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSoil() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SmartFarm", "Soil", 0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4ba697e934904be0L);
+    b.class_(false, false, false);
+    b.super_("SmartFarm.structure.Sensor", 0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de61c82e0L);
+    b.origin("r:3d8221a8-bf28-472f-a550-7226d0477236(SmartFarm.structure)/5451211426843610080");
+    b.version(2);
+    b.property("type", 0x4ba697e934924cc8L).type(PrimitiveTypeId.STRING).origin("5451211426843741384").done();
+    b.property("ph", 0x4ba697e934924ccaL).type(PrimitiveTypeId.BOOLEAN).origin("5451211426843741386").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTemperature() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SmartFarm", "Temperature", 0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4ba697e934904bdfL);
+    b.class_(false, false, false);
+    b.origin("r:3d8221a8-bf28-472f-a550-7226d0477236(SmartFarm.structure)/5451211426843610079");
+    b.version(2);
+    b.property("DegreeCelcius", 0x4ba697e93490cfc5L).type(PrimitiveTypeId.BOOLEAN).origin("5451211426843643845").done();
+    b.property("soiltemp", 0x4ba697e93490cfc7L).type(PrimitiveTypeId.BOOLEAN).origin("5451211426843643847").done();
+    b.property("plantstemp", 0x4ba697e93490cfcaL).type(PrimitiveTypeId.BOOLEAN).origin("5451211426843643850").done();
+    b.property("airtemp", 0x4ba697e93490cfceL).type(PrimitiveTypeId.BOOLEAN).origin("5451211426843643854").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForWater() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SmartFarm", "Water", 0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4ba697e934904be1L);
+    b.class_(false, false, false);
+    b.origin("r:3d8221a8-bf28-472f-a550-7226d0477236(SmartFarm.structure)/5451211426843610081");
+    b.version(2);
+    b.property("soilmoist", 0x4ba697e934924d26L).type(PrimitiveTypeId.BOOLEAN).origin("5451211426843741478").done();
+    b.property("airmoist", 0x4ba697e934924d28L).type(PrimitiveTypeId.BOOLEAN).origin("5451211426843741480").done();
     return b.create();
   }
 }

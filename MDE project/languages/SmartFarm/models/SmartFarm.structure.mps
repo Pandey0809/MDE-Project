@@ -64,40 +64,28 @@
     <property role="3GE5qa" value="Sensor" />
     <property role="34LRSv" value="sensor" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyi" id="4xCUKRA78bx" role="1TKVEl">
-      <property role="IQ2nx" value="5217678613236450017" />
-      <property role="TrG5h" value="Sensortype" />
-      <ref role="AX2Wp" node="4xCUKRA78bz" resolve="SensorType" />
+    <node concept="1TJgyj" id="4IA_Y$O$4Jy" role="1TKVEi">
+      <property role="IQ2ns" value="5451211426843610082" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="soilsensor" />
+      <ref role="20lvS9" node="4IA_Y$O$4Jw" resolve="Soil" />
     </node>
-  </node>
-  <node concept="25R3W" id="4xCUKRA78bz">
-    <property role="3F6X1D" value="5217678613236450019" />
-    <property role="TrG5h" value="SensorType" />
-    <property role="3GE5qa" value="Sensor" />
-    <node concept="25R33" id="4xCUKRA78b$" role="25R1y">
-      <property role="3tVfz5" value="5217678613236450020" />
-      <property role="TrG5h" value="temp" />
-      <property role="1L1pqM" value="Temperature Sensor" />
+    <node concept="1TJgyj" id="4IA_Y$O$4J$" role="1TKVEi">
+      <property role="IQ2ns" value="5451211426843610084" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="tempsensor" />
+      <ref role="20lvS9" node="4IA_Y$O$4Jv" resolve="Temperature" />
     </node>
-    <node concept="25R33" id="4xCUKRA78b_" role="25R1y">
-      <property role="3tVfz5" value="5217678613236450021" />
-      <property role="TrG5h" value="soil" />
-      <property role="1L1pqM" value="Soil monitor" />
-    </node>
-    <node concept="25R33" id="4xCUKRA78bC" role="25R1y">
-      <property role="3tVfz5" value="5217678613236450024" />
-      <property role="TrG5h" value="water" />
-      <property role="1L1pqM" value="Water monitor" />
-    </node>
-    <node concept="25R33" id="4xCUKRA78bG" role="25R1y">
-      <property role="3tVfz5" value="5217678613236450028" />
-      <property role="TrG5h" value="humid" />
-      <property role="1L1pqM" value="Humidity sensor" />
+    <node concept="1TJgyj" id="4IA_Y$O$4JB" role="1TKVEi">
+      <property role="IQ2ns" value="5451211426843610087" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="watersensor" />
+      <ref role="20lvS9" node="4IA_Y$O$4Jx" resolve="Water" />
     </node>
   </node>
   <node concept="Az7Fb" id="4xCUKRA7iqo">
     <property role="3F6X1D" value="5217678613236491928" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="crate" />
     <property role="TrG5h" value="Crateid" />
     <property role="FLfZY" value="[C][1-9][1-9]" />
   </node>
@@ -147,32 +135,7 @@
     <node concept="1TJgyi" id="4xCUKRA7mEB" role="1TKVEl">
       <property role="IQ2nx" value="5217678613236509351" />
       <property role="TrG5h" value="croptype" />
-      <ref role="AX2Wp" node="4xCUKRA7mEG" resolve="CropType" />
-    </node>
-  </node>
-  <node concept="25R3W" id="4xCUKRA7mEG">
-    <property role="3F6X1D" value="5217678613236509356" />
-    <property role="TrG5h" value="CropType" />
-    <property role="3GE5qa" value="Crop" />
-    <node concept="25R33" id="4xCUKRA7mEH" role="25R1y">
-      <property role="3tVfz5" value="5217678613236509357" />
-      <property role="TrG5h" value="tomato" />
-      <property role="1L1pqM" value="Tomato" />
-    </node>
-    <node concept="25R33" id="4xCUKRA7mEI" role="25R1y">
-      <property role="3tVfz5" value="5217678613236509358" />
-      <property role="TrG5h" value="chilli" />
-      <property role="1L1pqM" value="Chilli" />
-    </node>
-    <node concept="25R33" id="4xCUKRA7mEL" role="25R1y">
-      <property role="3tVfz5" value="5217678613236509361" />
-      <property role="TrG5h" value="potato" />
-      <property role="1L1pqM" value="Potato" />
-    </node>
-    <node concept="25R33" id="4xCUKRA7mEP" role="25R1y">
-      <property role="3tVfz5" value="5217678613236509365" />
-      <property role="TrG5h" value="cabbage" />
-      <property role="1L1pqM" value="Cabbage" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="4xCUKRA7mF7">
@@ -201,21 +164,13 @@
     <property role="EcuMT" value="5217678613236509389" />
     <property role="TrG5h" value="Crate" />
     <property role="34LRSv" value="crate" />
+    <property role="3GE5qa" value="crate" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyi" id="4xCUKRA9ZjJ" role="1TKVEl">
       <property role="IQ2nx" value="5217678613237200111" />
       <property role="TrG5h" value="id" />
       <ref role="AX2Wp" node="4xCUKRA7iqo" resolve="Crateid" />
-    </node>
-    <node concept="1TJgyi" id="4xCUKRA7mFe" role="1TKVEl">
-      <property role="IQ2nx" value="5217678613236509390" />
-      <property role="TrG5h" value="row" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="4xCUKRA7mFg" role="1TKVEl">
-      <property role="IQ2nx" value="5217678613236509392" />
-      <property role="TrG5h" value="column" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyj" id="4xCUKRA9Zj$" role="1TKVEi">
       <property role="IQ2ns" value="5217678613237200100" />
@@ -228,7 +183,7 @@
       <property role="IQ2ns" value="5217678613237200102" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="sensor" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4xCUKRA78bw" resolve="Sensor" />
     </node>
     <node concept="1TJgyj" id="4xCUKRA9ZjN" role="1TKVEi">
@@ -237,6 +192,9 @@
       <property role="20kJfa" value="light" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="4xCUKRA7mEi" resolve="Light" />
+    </node>
+    <node concept="PrWs8" id="4IA_Y$OEhbW" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="4xCUKRA7n9o">
@@ -295,6 +253,7 @@
       <property role="IQ2ns" value="5217678613236513724" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="camera" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4xCUKRA7mFa" resolve="Camera" />
     </node>
     <node concept="1TJgyj" id="4xCUKRA7nJh" role="1TKVEi">
@@ -326,20 +285,62 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4xCUKRAaAwd">
-    <property role="EcuMT" value="5217678613237360653" />
-    <property role="TrG5h" value="CrateList" />
-    <property role="19KtqR" value="true" />
+  <node concept="1TIwiD" id="4IA_Y$O$4Jv">
+    <property role="EcuMT" value="5451211426843610079" />
+    <property role="3GE5qa" value="Sensor" />
+    <property role="TrG5h" value="Temperature" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyj" id="4xCUKRAaAwe" role="1TKVEi">
-      <property role="IQ2ns" value="5217678613237360654" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="crate" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="4xCUKRA7mFd" resolve="Crate" />
+    <node concept="1TJgyi" id="4IA_Y$O$cZ5" role="1TKVEl">
+      <property role="IQ2nx" value="5451211426843643845" />
+      <property role="TrG5h" value="DegreeCelcius" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="PrWs8" id="4xCUKRAaMkt" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="1TJgyi" id="4IA_Y$O$cZ7" role="1TKVEl">
+      <property role="IQ2nx" value="5451211426843643847" />
+      <property role="TrG5h" value="soiltemp" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="4IA_Y$O$cZa" role="1TKVEl">
+      <property role="IQ2nx" value="5451211426843643850" />
+      <property role="TrG5h" value="plantstemp" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="4IA_Y$O$cZe" role="1TKVEl">
+      <property role="IQ2nx" value="5451211426843643854" />
+      <property role="TrG5h" value="airtemp" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4IA_Y$O$4Jw">
+    <property role="EcuMT" value="5451211426843610080" />
+    <property role="3GE5qa" value="Sensor" />
+    <property role="TrG5h" value="Soil" />
+    <ref role="1TJDcQ" node="4xCUKRA78bw" resolve="Sensor" />
+    <node concept="1TJgyi" id="4IA_Y$O$$N8" role="1TKVEl">
+      <property role="IQ2nx" value="5451211426843741384" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4IA_Y$O$$Na" role="1TKVEl">
+      <property role="IQ2nx" value="5451211426843741386" />
+      <property role="TrG5h" value="ph" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4IA_Y$O$4Jx">
+    <property role="EcuMT" value="5451211426843610081" />
+    <property role="3GE5qa" value="Sensor" />
+    <property role="TrG5h" value="Water" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="4IA_Y$O$$OA" role="1TKVEl">
+      <property role="IQ2nx" value="5451211426843741478" />
+      <property role="TrG5h" value="soilmoist" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="4IA_Y$O$$OC" role="1TKVEl">
+      <property role="IQ2nx" value="5451211426843741480" />
+      <property role="TrG5h" value="airmoist" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

@@ -8,13 +8,17 @@ import java.util.Collection;
 import org.jetbrains.mps.openapi.language.SLanguage;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
 import jetbrains.mps.core.aspects.feedback.api.FeedbackAspect;
+import SmartFarm.constraints.GeneratedFeedbackAspectConstraints;
 import SmartFarm.feedback.GeneratedFeedbackAspectFeedback;
+import jetbrains.mps.core.aspects.constraints.rules.RulesConstraintsAspect;
+import SmartFarm.constraints.GeneratedRulesConstraintsAspect;
 import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import SmartFarm.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import SmartFarm.structure.ConceptPresentationAspectImpl;
+import jetbrains.mps.text.rt.TextGenAspectDescriptor;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.smodel.language.LanguageExtensions;
 
@@ -46,7 +50,10 @@ public class Language extends LanguageRuntime {
   @Override
   protected <T extends ILanguageAspect> T createAspect(Class<T> aspectClass) {
     if (aspectClass.isAssignableFrom(FeedbackAspect.class)) {
-      return aspectClass.cast(FeedbackAspect.combine(new GeneratedFeedbackAspectFeedback()));
+      return aspectClass.cast(FeedbackAspect.combine(new GeneratedFeedbackAspectConstraints(), new GeneratedFeedbackAspectFeedback()));
+    }
+    if (aspectClass.isAssignableFrom(RulesConstraintsAspect.class)) {
+      return aspectClass.cast(new GeneratedRulesConstraintsAspect());
     }
     if (aspectClass == ConstraintsAspectDescriptor.class) {
       return aspectClass.cast(new SmartFarm.constraints.ConstraintsAspectDescriptor());
@@ -59,6 +66,9 @@ public class Language extends LanguageRuntime {
     }
     if (aspectClass == ConceptPresentationAspect.class) {
       return aspectClass.cast(new ConceptPresentationAspectImpl());
+    }
+    if (aspectClass == TextGenAspectDescriptor.class) {
+      return aspectClass.cast(new SmartFarm.textGen.TextGenAspectDescriptor());
     }
     return null;
   }

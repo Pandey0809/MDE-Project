@@ -161,25 +161,26 @@
     </node>
   </node>
   <node concept="24kQdi" id="4xCUKRA9Zkh">
+    <property role="3GE5qa" value="crate" />
     <ref role="1XX52x" to="hp5j:4xCUKRA7mFd" resolve="Crate" />
     <node concept="3EZMnI" id="4xCUKRA9Zkj" role="2wV5jI">
+      <node concept="3F0ifn" id="4IA_Y$O_D5Z" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+      </node>
+      <node concept="3F0ifn" id="4IA_Y$OEhaW" role="3EZMnx">
+        <property role="3F0ifm" value="Crate for farm (include crate number)" />
+      </node>
+      <node concept="3F0A7n" id="4IA_Y$OEhbY" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
       <node concept="3F0ifn" id="4xCUKRA9Zkt" role="3EZMnx">
-        <property role="3F0ifm" value="Crate id" />
+        <property role="3F0ifm" value="Crate id(format CRowColumn)" />
+        <node concept="pVoyu" id="4IA_Y$O_4eo" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0A7n" id="4xCUKRA9Zkz" role="3EZMnx">
         <ref role="1NtTu8" to="hp5j:4xCUKRA9ZjJ" resolve="id" />
-      </node>
-      <node concept="3F0ifn" id="4xCUKRA9Zln" role="3EZMnx">
-        <property role="3F0ifm" value="Crate row" />
-      </node>
-      <node concept="3F0A7n" id="4xCUKRA9Zlt" role="3EZMnx">
-        <ref role="1NtTu8" to="hp5j:4xCUKRA7mFe" resolve="row" />
-      </node>
-      <node concept="3F0ifn" id="4xCUKRA9ZlK" role="3EZMnx">
-        <property role="3F0ifm" value="Crate Col" />
-      </node>
-      <node concept="3F0A7n" id="4xCUKRA9ZlY" role="3EZMnx">
-        <ref role="1NtTu8" to="hp5j:4xCUKRA7mFg" resolve="column" />
       </node>
       <node concept="3F0ifn" id="4xCUKRAarMu" role="3EZMnx">
         <property role="3F0ifm" value=";" />
@@ -195,17 +196,18 @@
       </node>
       <node concept="3F0ifn" id="4xCUKRAa8dy" role="3EZMnx">
         <property role="3F0ifm" value="Sensor" />
+        <node concept="pVoyu" id="4IA_Y$O$4Jt" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
-      <node concept="3F2HdR" id="4xCUKRA9ZmI" role="3EZMnx">
+      <node concept="3F1sOY" id="4IA_Y$O$Qz_" role="3EZMnx">
         <ref role="1NtTu8" to="hp5j:4xCUKRA9ZjA" resolve="sensor" />
-        <node concept="2iRkQZ" id="4xCUKRA9ZmL" role="2czzBx" />
-        <node concept="VPM3Z" id="4xCUKRA9ZmM" role="3F10Kt" />
-      </node>
-      <node concept="3F0ifn" id="4xCUKRAarNO" role="3EZMnx">
-        <property role="3F0ifm" value=";" />
       </node>
       <node concept="3F0ifn" id="4xCUKRAa8e8" role="3EZMnx">
         <property role="3F0ifm" value="Light" />
+        <node concept="pVoyu" id="4IA_Y$O_D50" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F2HdR" id="4xCUKRA9Znd" role="3EZMnx">
         <ref role="1NtTu8" to="hp5j:4xCUKRA9ZjN" resolve="light" />
@@ -213,19 +215,12 @@
         <node concept="VPM3Z" id="4xCUKRA9Znh" role="3F10Kt" />
       </node>
       <node concept="l2Vlx" id="4xCUKRA9Zkm" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="4xCUKRAah5L">
-    <property role="3GE5qa" value="Sensor" />
-    <ref role="1XX52x" to="hp5j:4xCUKRA78bw" resolve="Sensor" />
-    <node concept="3EZMnI" id="4xCUKRAah5N" role="2wV5jI">
-      <node concept="3F0ifn" id="4xCUKRAah5U" role="3EZMnx">
-        <property role="3F0ifm" value="type" />
+      <node concept="3F0ifn" id="4IA_Y$O_D5D" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <node concept="pVoyu" id="4IA_Y$O_D5X" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
-      <node concept="3F0A7n" id="4xCUKRAah60" role="3EZMnx">
-        <ref role="1NtTu8" to="hp5j:4xCUKRA78bx" resolve="Sensortype" />
-      </node>
-      <node concept="l2Vlx" id="4xCUKRAah5Q" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="4xCUKRAah6w">
@@ -254,21 +249,128 @@
       <node concept="l2Vlx" id="4xCUKRAah7l" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="4xCUKRAb7Gy">
-    <ref role="1XX52x" to="hp5j:4xCUKRAaAwd" resolve="CrateList" />
-    <node concept="3EZMnI" id="4xCUKRAb7G$" role="2wV5jI">
-      <node concept="3F0A7n" id="4xCUKRAb7GI" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+  <node concept="24kQdi" id="4IA_Y$O$cZH">
+    <property role="3GE5qa" value="Sensor" />
+    <ref role="1XX52x" to="hp5j:4IA_Y$O$4Jv" resolve="Temperature" />
+    <node concept="3EZMnI" id="4IA_Y$O$cZJ" role="2wV5jI">
+      <node concept="3F0ifn" id="4IA_Y$O$NQD" role="3EZMnx">
+        <property role="3F0ifm" value="Temerature" />
       </node>
-      <node concept="3F2HdR" id="4xCUKRAb7GQ" role="3EZMnx">
-        <ref role="1NtTu8" to="hp5j:4xCUKRAaAwe" resolve="crate" />
-        <node concept="2iRkQZ" id="4xCUKRAb7GT" role="2czzBx" />
-        <node concept="VPM3Z" id="4xCUKRAb7GU" role="3F10Kt" />
-        <node concept="pVoyu" id="4xCUKRAb7GZ" role="3F10Kt">
+      <node concept="3F0ifn" id="4IA_Y$O$cZT" role="3EZMnx">
+        <property role="3F0ifm" value="Do you want temperature in Degree Celcius" />
+      </node>
+      <node concept="3F0A7n" id="4IA_Y$O$d03" role="3EZMnx">
+        <ref role="1NtTu8" to="hp5j:4IA_Y$O$cZ5" resolve="DegreeCelcius" />
+      </node>
+      <node concept="3F0ifn" id="4IA_Y$O$d0_" role="3EZMnx">
+        <property role="3F0ifm" value="Soil Temperature" />
+        <node concept="pVoyu" id="4IA_Y$O$$LI" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="l2Vlx" id="4xCUKRAb7GB" role="2iSdaV" />
+      <node concept="3F0A7n" id="4IA_Y$O$d0T" role="3EZMnx">
+        <ref role="1NtTu8" to="hp5j:4IA_Y$O$cZ7" resolve="soiltemp" />
+      </node>
+      <node concept="3F0ifn" id="4IA_Y$O$d1f" role="3EZMnx">
+        <property role="3F0ifm" value="Plant Temperature" />
+        <node concept="pVoyu" id="4IA_Y$O$d1L" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4IA_Y$O$d1C" role="3EZMnx">
+        <ref role="1NtTu8" to="hp5j:4IA_Y$O$cZa" resolve="plantstemp" />
+      </node>
+      <node concept="3F0ifn" id="4IA_Y$O$d28" role="3EZMnx">
+        <property role="3F0ifm" value="Air Temperature" />
+        <node concept="pVoyu" id="4IA_Y$O$d2Q" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4IA_Y$O$d2E" role="3EZMnx">
+        <ref role="1NtTu8" to="hp5j:4IA_Y$O$cZe" resolve="airtemp" />
+      </node>
+      <node concept="l2Vlx" id="4IA_Y$O$cZM" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4IA_Y$O$qad">
+    <property role="3GE5qa" value="Sensor" />
+    <ref role="1XX52x" to="hp5j:4xCUKRA78bw" resolve="Sensor" />
+    <node concept="3EZMnI" id="4IA_Y$O$qay" role="2wV5jI">
+      <node concept="3F0ifn" id="4IA_Y$O$NQ7" role="3EZMnx">
+        <property role="3F0ifm" value="Do you want the following sensors" />
+      </node>
+      <node concept="3F0ifn" id="4IA_Y$O$$LP" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F1sOY" id="4IA_Y$O$qaG" role="3EZMnx">
+        <ref role="1NtTu8" to="hp5j:4IA_Y$O$4Jy" resolve="soilsensor" />
+      </node>
+      <node concept="3F0ifn" id="4IA_Y$O$$My" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
+      <node concept="3F0ifn" id="4IA_Y$O$$ME" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F1sOY" id="4IA_Y$O$qaM" role="3EZMnx">
+        <ref role="1NtTu8" to="hp5j:4IA_Y$O$4J$" resolve="tempsensor" />
+      </node>
+      <node concept="3F0ifn" id="4IA_Y$O$$LV" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
+      <node concept="3F0ifn" id="4IA_Y$O$$MN" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F1sOY" id="4IA_Y$O$qaU" role="3EZMnx">
+        <ref role="1NtTu8" to="hp5j:4IA_Y$O$4JB" resolve="watersensor" />
+      </node>
+      <node concept="3F0ifn" id="4IA_Y$O$$MX" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
+      <node concept="2iRkQZ" id="4IA_Y$O$qa_" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4IA_Y$O$$NH">
+    <property role="3GE5qa" value="Sensor" />
+    <ref role="1XX52x" to="hp5j:4IA_Y$O$4Jw" resolve="Soil" />
+    <node concept="3EZMnI" id="4IA_Y$O$$NJ" role="2wV5jI">
+      <node concept="3F0ifn" id="4IA_Y$O$$NT" role="3EZMnx">
+        <property role="3F0ifm" value="Soil Type" />
+      </node>
+      <node concept="3F0A7n" id="4IA_Y$O$$O3" role="3EZMnx">
+        <ref role="1NtTu8" to="hp5j:4IA_Y$O$$N8" resolve="type" />
+      </node>
+      <node concept="3F0ifn" id="4IA_Y$O$$Og" role="3EZMnx">
+        <property role="3F0ifm" value="Do you want ph sensor for it" />
+        <node concept="pVoyu" id="4IA_Y$O$NR7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4IA_Y$O$$Ow" role="3EZMnx">
+        <ref role="1NtTu8" to="hp5j:4IA_Y$O$$Na" resolve="ph" />
+      </node>
+      <node concept="l2Vlx" id="4IA_Y$O$$NM" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4IA_Y$O$$P5">
+    <property role="3GE5qa" value="Sensor" />
+    <ref role="1XX52x" to="hp5j:4IA_Y$O$4Jx" resolve="Water" />
+    <node concept="3EZMnI" id="4IA_Y$O$$P7" role="2wV5jI">
+      <node concept="3F0ifn" id="4IA_Y$O$$Ph" role="3EZMnx">
+        <property role="3F0ifm" value="Soil moisture" />
+      </node>
+      <node concept="3F0A7n" id="4IA_Y$O$$Pr" role="3EZMnx">
+        <ref role="1NtTu8" to="hp5j:4IA_Y$O$$OA" resolve="soilmoist" />
+      </node>
+      <node concept="3F0ifn" id="4IA_Y$O$$PC" role="3EZMnx">
+        <property role="3F0ifm" value="Humidity" />
+        <node concept="pVoyu" id="4IA_Y$O$NR9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4IA_Y$O$$PS" role="3EZMnx">
+        <ref role="1NtTu8" to="hp5j:4IA_Y$O$$OC" resolve="airmoist" />
+      </node>
+      <node concept="l2Vlx" id="4IA_Y$O$$Pa" role="2iSdaV" />
     </node>
   </node>
 </model>
