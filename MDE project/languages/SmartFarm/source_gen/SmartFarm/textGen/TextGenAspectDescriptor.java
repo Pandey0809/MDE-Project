@@ -23,10 +23,16 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public TextGenDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     switch (myIndex.index(concept)) {
+      case LanguageConceptSwitch.Camera:
+        return new Camera_TextGen();
       case LanguageConceptSwitch.Crate:
         return new Crate_TextGen();
       case LanguageConceptSwitch.Crop:
         return new Crop_TextGen();
+      case LanguageConceptSwitch.Drone:
+        return new Drone_TextGen();
+      case LanguageConceptSwitch.Farm:
+        return new Farm_TextGen();
       case LanguageConceptSwitch.Sensor:
         return new Sensor_TextGen();
       case LanguageConceptSwitch.Soil:
@@ -48,16 +54,29 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         outline.registerTextUnit((ext == null ? fname : (fname + '.' + ext)), root);
         continue;
       }
+      if (root.getConcept().equals(CONCEPTS.Farm$Gk)) {
+        String fname = getFileName_Farm(root);
+        String ext = getFileExtension_Farm(root);
+        outline.registerTextUnit((ext == null ? fname : (fname + '.' + ext)), root);
+        continue;
+      }
     }
   }
   private static String getFileName_Crate(SNode node) {
     return node.getName();
   }
+  private static String getFileName_Farm(SNode node) {
+    return node.getName();
+  }
   private static String getFileExtension_Crate(SNode node) {
+    return null;
+  }
+  private static String getFileExtension_Farm(SNode node) {
     return null;
   }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Crate$60 = MetaAdapterFactory.getConcept(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de61d6acdL, "SmartFarm.structure.Crate");
+    /*package*/ static final SConcept Farm$Gk = MetaAdapterFactory.getConcept(0x835d7f18a2604c9dL, 0xa7a7f5480713c93dL, 0x4868eb0de61d7269L, "SmartFarm.structure.Farm");
   }
 }

@@ -11,8 +11,8 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="60,0,63,0" name="SmartFarm.textGen.TextGenAspectDescriptor$CONCEPTS" />
-      <unit at="16,0,64,0" name="SmartFarm.textGen.TextGenAspectDescriptor" />
+      <unit at="78,0,82,0" name="SmartFarm.textGen.TextGenAspectDescriptor$CONCEPTS" />
+      <unit at="16,0,83,0" name="SmartFarm.textGen.TextGenAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:e435e5e6-9c61-4251-a00e-c163e447326e(SmartFarm.textGen)/5451211426844281010">
@@ -39,26 +39,26 @@
       <unit id="5451211426844281010" at="14,0,35,0" name="SmartFarm.textGen.Crate_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="5451211426844281010" at="26,39,27,35" concept="5" />
-      <node id="5451211426844281010" at="45,56,46,47" concept="4" />
-      <node id="5451211426844281010" at="46,47,47,50" concept="4" />
-      <node id="5451211426844281010" at="47,50,48,84" concept="1" />
-      <node id="5451211426844281010" at="48,84,49,17" concept="0" />
-      <node id="5451211426844281010" at="53,55,54,26" concept="5" />
-      <node id="5451211426844281010" at="56,60,57,16" concept="5" />
-      <node id="5451211426844281010" at="53,0,56,0" concept="8" trace="getFileName_Crate#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5451211426844281010" at="56,0,59,0" concept="8" trace="getFileExtension_Crate#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5451211426844281010" at="44,58,50,7" concept="2" />
-      <scope id="5451211426844281010" at="26,39,27,35" />
-      <scope id="5451211426844281010" at="53,55,54,26" />
-      <scope id="5451211426844281010" at="56,60,57,16" />
-      <scope id="5451211426844281010" at="53,0,56,0">
+      <node id="5451211426844281010" at="28,39,29,35" concept="5" />
+      <node id="5451211426844281010" at="51,56,52,47" concept="4" />
+      <node id="5451211426844281010" at="52,47,53,50" concept="4" />
+      <node id="5451211426844281010" at="53,50,54,84" concept="1" />
+      <node id="5451211426844281010" at="54,84,55,17" concept="0" />
+      <node id="5451211426844281010" at="65,55,66,26" concept="5" />
+      <node id="5451211426844281010" at="71,60,72,16" concept="5" />
+      <node id="5451211426844281010" at="65,0,68,0" concept="8" trace="getFileName_Crate#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5451211426844281010" at="71,0,74,0" concept="8" trace="getFileExtension_Crate#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5451211426844281010" at="50,58,56,7" concept="2" />
+      <scope id="5451211426844281010" at="28,39,29,35" />
+      <scope id="5451211426844281010" at="65,55,66,26" />
+      <scope id="5451211426844281010" at="71,60,72,16" />
+      <scope id="5451211426844281010" at="65,0,68,0">
         <var name="node" id="5451211426844281010" />
       </scope>
-      <scope id="5451211426844281010" at="56,0,59,0">
+      <scope id="5451211426844281010" at="71,0,74,0">
         <var name="node" id="5451211426844281010" />
       </scope>
-      <scope id="5451211426844281010" at="45,56,49,17">
+      <scope id="5451211426844281010" at="51,56,55,17">
         <var name="ext" id="5451211426844281010" />
         <var name="fname" id="5451211426844281010" />
       </scope>
@@ -82,8 +82,8 @@
       <unit id="5451211426844684906" at="12,0,25,0" name="SmartFarm.textGen.Crop_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="5451211426844684906" at="28,38,29,34" concept="5" />
-      <scope id="5451211426844684906" at="28,38,29,34" />
+      <node id="5451211426844684906" at="30,38,31,34" concept="5" />
+      <scope id="5451211426844684906" at="30,38,31,34" />
     </file>
   </root>
   <root nodeRef="r:e435e5e6-9c61-4251-a00e-c163e447326e(SmartFarm.textGen)/5451211426844837761">
@@ -112,8 +112,8 @@
       <unit id="5451211426844837761" at="12,0,33,0" name="SmartFarm.textGen.Sensor_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="5451211426844837761" at="30,40,31,36" concept="5" />
-      <scope id="5451211426844837761" at="30,40,31,36" />
+      <node id="5451211426844837761" at="36,40,37,36" concept="5" />
+      <scope id="5451211426844837761" at="36,40,37,36" />
     </file>
   </root>
   <root nodeRef="r:e435e5e6-9c61-4251-a00e-c163e447326e(SmartFarm.textGen)/5451211426844888421">
@@ -138,8 +138,8 @@
       <unit id="5451211426844888421" at="12,0,29,0" name="SmartFarm.textGen.Soil_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="5451211426844888421" at="32,38,33,34" concept="5" />
-      <scope id="5451211426844888421" at="32,38,33,34" />
+      <node id="5451211426844888421" at="38,38,39,34" concept="5" />
+      <scope id="5451211426844888421" at="38,38,39,34" />
     </file>
   </root>
   <root nodeRef="r:e435e5e6-9c61-4251-a00e-c163e447326e(SmartFarm.textGen)/5451211426845052538">
@@ -185,14 +185,14 @@
       <unit id="5451211426845052538" at="12,0,50,0" name="SmartFarm.textGen.Temperature_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="5451211426845052538" at="34,45,35,41" concept="5" />
-      <scope id="5451211426845052538" at="34,45,35,41" />
+      <node id="5451211426845052538" at="40,45,41,41" concept="5" />
+      <scope id="5451211426845052538" at="40,45,41,41" />
     </file>
   </root>
   <root nodeRef="r:e435e5e6-9c61-4251-a00e-c163e447326e(SmartFarm.textGen)/5451211426845057392">
     <file name="TextGenAspectDescriptor.java">
-      <node id="5451211426845057392" at="36,39,37,35" concept="5" />
-      <scope id="5451211426845057392" at="36,39,37,35" />
+      <node id="5451211426845057392" at="42,39,43,35" concept="5" />
+      <scope id="5451211426845057392" at="42,39,43,35" />
     </file>
     <file name="Water_TextGen.java">
       <node id="5451211426845057392" at="14,54,15,55" concept="4" />
@@ -218,6 +218,112 @@
       </scope>
       <unit id="5451211426845057392" at="29,0,33,0" name="SmartFarm.textGen.Water_TextGen$PROPS" />
       <unit id="5451211426845057392" at="12,0,34,0" name="SmartFarm.textGen.Water_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:e435e5e6-9c61-4251-a00e-c163e447326e(SmartFarm.textGen)/5451211426845498514">
+    <file name="Farm_TextGen.java">
+      <node id="5451211426845498514" at="16,54,17,55" concept="4" />
+      <node id="5451211426845498555" at="17,55,18,23" concept="1" />
+      <node id="5451211426845498608" at="18,23,19,86" concept="1" />
+      <node id="5451211426845500670" at="19,86,20,18" concept="1" />
+      <node id="5451211426845500760" at="20,18,21,31" concept="1" />
+      <node id="5451211426845500845" at="21,31,22,103" concept="1" />
+      <node id="5451211426845563425" at="22,103,23,18" concept="1" />
+      <node id="5451211426845563426" at="23,18,24,32" concept="1" />
+      <node id="5451211426845563427" at="24,32,25,94" concept="1" />
+      <node id="5451211426845564610" at="25,94,26,46" concept="1" />
+      <node id="5451211426845565204" at="26,46,27,93" concept="1" />
+      <node id="5451211426845571870" at="27,93,28,18" concept="1" />
+      <node id="5451211426845571908" at="28,18,29,88" concept="1" />
+      <node id="5451211426845634788" at="29,88,30,18" concept="1" />
+      <node id="5451211426845634789" at="30,18,31,87" concept="1" />
+      <node id="5451211426845634582" at="31,87,32,0" concept="6" />
+      <node id="5451211426845633768" at="32,0,33,0" concept="6" />
+      <node id="5451211426845563433" at="33,0,34,0" concept="6" />
+      <node id="5451211426845562939" at="34,0,35,0" concept="6" />
+      <node id="5451211426845498514" at="39,0,40,0" concept="7" trace="name$MnvL" />
+      <node id="5451211426845498514" at="40,0,41,0" concept="7" trace="cratesrequired$tyWJ" />
+      <node id="5451211426845498514" at="41,0,42,0" concept="7" trace="norow$VB$T" />
+      <node id="5451211426845498514" at="42,0,43,0" concept="7" trace="nocol$VChW" />
+      <node id="5451211426845498514" at="46,0,47,0" concept="7" trace="camera$$tV_" />
+      <node id="5451211426845498514" at="47,0,48,0" concept="7" trace="drone$$GH$" />
+      <node id="5451211426845498514" at="15,0,37,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="5451211426845498514" at="16,54,35,0">
+        <var name="tgs" id="5451211426845498514" />
+      </scope>
+      <scope id="5451211426845498514" at="15,0,37,0">
+        <var name="ctx" id="5451211426845498514" />
+      </scope>
+      <unit id="5451211426845498514" at="45,0,49,0" name="SmartFarm.textGen.Farm_TextGen$LINKS" />
+      <unit id="5451211426845498514" at="38,0,44,0" name="SmartFarm.textGen.Farm_TextGen$PROPS" />
+      <unit id="5451211426845498514" at="14,0,50,0" name="SmartFarm.textGen.Farm_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="5451211426845498514" at="34,38,35,34" concept="5" />
+      <node id="5451211426845498514" at="57,55,58,46" concept="4" />
+      <node id="5451211426845498514" at="58,46,59,49" concept="4" />
+      <node id="5451211426845498514" at="59,49,60,84" concept="1" />
+      <node id="5451211426845498514" at="60,84,61,17" concept="0" />
+      <node id="5451211426845498514" at="68,54,69,26" concept="5" />
+      <node id="5451211426845498514" at="74,59,75,16" concept="5" />
+      <node id="5451211426845498514" at="68,0,71,0" concept="8" trace="getFileName_Farm#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5451211426845498514" at="74,0,77,0" concept="8" trace="getFileExtension_Farm#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5451211426845498514" at="56,7,62,7" concept="2" />
+      <scope id="5451211426845498514" at="34,38,35,34" />
+      <scope id="5451211426845498514" at="68,54,69,26" />
+      <scope id="5451211426845498514" at="74,59,75,16" />
+      <scope id="5451211426845498514" at="68,0,71,0">
+        <var name="node" id="5451211426845498514" />
+      </scope>
+      <scope id="5451211426845498514" at="74,0,77,0">
+        <var name="node" id="5451211426845498514" />
+      </scope>
+      <scope id="5451211426845498514" at="57,55,61,17">
+        <var name="ext" id="5451211426845498514" />
+        <var name="fname" id="5451211426845498514" />
+      </scope>
+    </file>
+  </root>
+  <root nodeRef="r:e435e5e6-9c61-4251-a00e-c163e447326e(SmartFarm.textGen)/5451211426845574195">
+    <file name="Camera_TextGen.java">
+      <node id="5451211426845574195" at="14,54,15,55" concept="4" />
+      <node id="5451211426845574235" at="15,55,16,41" concept="1" />
+      <node id="5451211426845574333" at="16,41,17,98" concept="1" />
+      <node id="5451211426845574195" at="21,0,22,0" concept="7" trace="camerareq$2Hin" />
+      <node id="5451211426845574195" at="13,0,19,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="5451211426845574195" at="14,54,17,98">
+        <var name="tgs" id="5451211426845574195" />
+      </scope>
+      <scope id="5451211426845574195" at="13,0,19,0">
+        <var name="ctx" id="5451211426845574195" />
+      </scope>
+      <unit id="5451211426845574195" at="20,0,23,0" name="SmartFarm.textGen.Camera_TextGen$PROPS" />
+      <unit id="5451211426845574195" at="12,0,24,0" name="SmartFarm.textGen.Camera_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="5451211426845574195" at="26,40,27,36" concept="5" />
+      <scope id="5451211426845574195" at="26,40,27,36" />
+    </file>
+  </root>
+  <root nodeRef="r:e435e5e6-9c61-4251-a00e-c163e447326e(SmartFarm.textGen)/5451211426845636399">
+    <file name="Drone_TextGen.java">
+      <node id="5451211426845636399" at="14,54,15,55" concept="4" />
+      <node id="5451211426845636420" at="15,55,16,40" concept="1" />
+      <node id="5451211426845636421" at="16,40,17,98" concept="1" />
+      <node id="5451211426845636399" at="21,0,22,0" concept="7" trace="reqnumber$rK_6" />
+      <node id="5451211426845636399" at="13,0,19,0" concept="3" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="5451211426845636399" at="14,54,17,98">
+        <var name="tgs" id="5451211426845636399" />
+      </scope>
+      <scope id="5451211426845636399" at="13,0,19,0">
+        <var name="ctx" id="5451211426845636399" />
+      </scope>
+      <unit id="5451211426845636399" at="20,0,23,0" name="SmartFarm.textGen.Drone_TextGen$PROPS" />
+      <unit id="5451211426845636399" at="12,0,24,0" name="SmartFarm.textGen.Drone_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="5451211426845636399" at="32,39,33,35" concept="5" />
+      <scope id="5451211426845636399" at="32,39,33,35" />
     </file>
   </root>
 </debug-info>

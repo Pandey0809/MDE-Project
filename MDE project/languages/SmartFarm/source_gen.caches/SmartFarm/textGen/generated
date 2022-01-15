@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-5zzkmb6wuicl43qcsgple9xq4u47jxp">
-  <files names="Crate_TextGen.java:Crop_TextGen.java:Sensor_TextGen.java:Soil_TextGen.java:Temperature_TextGen.java:TextGenAspectDescriptor.java:Water_TextGen.java" />
+<product version="3" modelHash="4o1v697mjv0k9d3terl15hxsap1nvj6">
+  <files names="Camera_TextGen.java:Crate_TextGen.java:Crop_TextGen.java:Drone_TextGen.java:Farm_TextGen.java:Sensor_TextGen.java:Soil_TextGen.java:Temperature_TextGen.java:TextGenAspectDescriptor.java:Water_TextGen.java" />
 </product>
 

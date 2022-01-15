@@ -61,8 +61,8 @@
   <node concept="2Itp_$" id="4IA_Y$O_s9C">
     <property role="TrG5h" value="Smart Farm" />
     <property role="2ItzvR" value="1" />
-    <property role="2ItzvK" value="10" />
-    <property role="2It$oZ" value="10" />
+    <property role="2ItzvK" value="2" />
+    <property role="2It$oZ" value="2" />
     <node concept="2Ito77" id="4IA_Y$O_s9D" role="2Itp2L">
       <property role="2Ijwoo" value="1" />
     </node>
@@ -96,6 +96,25 @@
       <node concept="1ZdHK8" id="4IA_Y$OEtSQ" role="1ZdHKe">
         <property role="1ZddFf" value="true" />
         <property role="1ZddF1" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="2Ito70" id="4IA_Y$OG1Yf">
+    <property role="TrG5h" value="SmartFarmCrate2" />
+    <property role="2IjLZy" value="C12" />
+    <node concept="2Ito6F" id="4IA_Y$OG1Yg" role="2IjLZD">
+      <property role="2Ito6E" value="Tomato" />
+    </node>
+    <node concept="2It6BH" id="4IA_Y$OG1Yh" role="2IjLZF">
+      <node concept="1ZdHK9" id="4IA_Y$OG1Yi" role="1ZdHKb">
+        <property role="1ZddGx" value="Clay" />
+      </node>
+      <node concept="1ZdHKQ" id="4IA_Y$OG1Yk" role="1ZdHKd">
+        <property role="1Zd_wG" value="true" />
+        <property role="1Zd_wI" value="true" />
+      </node>
+      <node concept="1ZdHK8" id="4IA_Y$OG1Ym" role="1ZdHKe">
+        <property role="1ZddFf" value="true" />
       </node>
     </node>
   </node>
