@@ -12,6 +12,9 @@
         <child id="5451211426843610084" name="tempsensor" index="1ZdHKd" />
         <child id="5451211426843610087" name="watersensor" index="1ZdHKe" />
       </concept>
+      <concept id="5217678613236509330" name="SmartFarm.structure.Light" flags="ng" index="2Ito6v">
+        <property id="5217678613236509345" name="lighttype" index="2Ito6G" />
+      </concept>
       <concept id="5217678613236509350" name="SmartFarm.structure.Crop" flags="ng" index="2Ito6F">
         <property id="5217678613236509351" name="croptype" index="2Ito6E" />
       </concept>
@@ -19,6 +22,7 @@
         <property id="5217678613237200111" name="id" index="2IjLZy" />
         <child id="5217678613237200100" name="crop" index="2IjLZD" />
         <child id="5217678613237200102" name="sensor" index="2IjLZF" />
+        <child id="5217678613237200115" name="light" index="2IjLZY" />
       </concept>
       <concept id="5217678613236509386" name="SmartFarm.structure.Camera" flags="ng" index="2Ito77">
         <property id="5217678613237132565" name="camerareq" index="2Ijwoo" />
@@ -97,6 +101,12 @@
         <property role="1ZddFf" value="true" />
         <property role="1ZddF1" value="true" />
       </node>
+    </node>
+    <node concept="2Ito6v" id="637NzNGiRdk" role="2IjLZY">
+      <property role="2Ito6G" value="4xCUKRA7mEl/blue" />
+    </node>
+    <node concept="2Ito6v" id="637NzNGiRdm" role="2IjLZY">
+      <property role="2Ito6G" value="4xCUKRA7mEk/UV" />
     </node>
   </node>
   <node concept="2Ito70" id="4IA_Y$OG1Yf">
