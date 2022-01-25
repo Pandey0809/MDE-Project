@@ -16,9 +16,10 @@
   Farm is a single entity linked to multiple Crates.
   
   Task2- A encore model with ocl constrains, operation and derived fields for the domain smart farm.
-     1) Here we have a root class Farm.
-     2) Each farm contains Crates, AI, Camera and Drones.
-     3) Each crate has information about the camera, drone, ai which are derived using ocl.
-     4) Each crate also contain a crop and a light for giving energy to the crop and the related sensors for monitoring the crate.
-     5) We have used multiple emfatic and ocl concepts in this projects like enum data type,
-        constraints and query operations over values of different sensors.
+  1) Here we have a root class Farm.
+  2) Each farm contains Crates, AI, Camera and Drones.
+  3) Each crate has information about the camera, drone, ai which are derived using ocl.
+  4) Each crate also contain a crop and a light for giving energy to the crop and the related sensors for monitoring the crate.
+  5) We have used multiple emfatic and ocl concepts in this projects like enum data type,
+        constraints and query operations over values of different sensors. 
+    
