@@ -12,7 +12,7 @@
   2) Enum data type-
      LightType, AItype.
      
-  3) Constrained DataType
+  3) Constrained DataType-
       Crateid.
       
   This project has 2 main root elements Farm and the Crates contained by it.
