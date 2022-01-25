@@ -1,15 +1,24 @@
-# MDE-Project
-this contains our mde project 2021-2022
-A smart farm system.
-
-The goal of the domain language defined in all the technologies and tools is to 
-create a language for a smart farm. It consists of different sensors, crops
-,AI ,drones, cameras and other aspects of a smart farm. 
-Also another important aspect is that of a crate.
-
-The precedence in the farm id like Farm->crates,drones,cameras,AI.  crate-> sensors, lights,crops.
-
-A1. MPS
-we have defined our meta model in MPS.
-
-A2. EMF and OCLinEcore
+# MDE-Project 2021
+ Project Work done by-
+  Mariia Smirnova
+        and
+  Himanshu Pandey
+  
+ The Repository consists of different task assigned during The MDE course at Univaq, for se4gd masters course.
+  Task1- Implimentation of a domain language for Managing a smart farm details Using **MPS**
+  1) The model has following Concepts-
+     Farm, Drone, Camera, Sensor, Water(sensor), Soil(sensor), Temperature(sensor),Light, Crop,AI, Crate
+  2) Enum data type-
+     LightType, AItype
+  3) Constrained DataType
+      Crateid
+  This project has 2 main root elements Farm and the Crates contained by it.
+  Farm is a single entity linked to multiple Crates.
+  
+  Task2- A encore model with ocl constrains, operation and derived fields for the domain smart farm.
+     *)Here we have a root class Farm.
+     *)Each farm contains Crates, AI, Camera and Drones.
+     *)Each crate has information about the camera, drone, ai which are derived using ocl.
+     *)Each crate also contain a crop and a light for giving energy to the crop and the related sensors for monitoring the crate.
+     *)We have used multiple emfatic and ocl concepts in this projects like enum data type,
+     constraints and query operations over values of different sensors.
