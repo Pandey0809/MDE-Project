@@ -33,7 +33,7 @@
   
   Task4-
   1) We first generate a text editor for our model (from Task 2) using Xtext.
-   To run the project- \n
+   To run the project- 
    a) Expand the zip file A4.1 and run the folder containing the main extext file as a eclipse instance.
    b) In the new instance open A4.1.2 and run the farm project.
   2) In the second project we create a graphical editor for our model.
