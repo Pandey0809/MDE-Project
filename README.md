@@ -5,7 +5,7 @@
   Himanshu Pandey**
   
  The Repository consists of different task assigned during The **MDE course at University of L'aquila**, for se4gd masters course.
-  **Task1**- Implimentation of a domain language for Managing a smart farm details Using **MPS**
+  ##Task1- Implimentation of a domain language for Managing a smart farm details Using **MPS**
   1) The model has following Concepts-
      Farm, Drone, Camera, Sensor, Water(sensor), Soil(sensor), Temperature(sensor),Light, Crop,AI, Crate.
      
@@ -19,7 +19,7 @@
   
   Farm is a single entity linked to multiple Crates.
   
-  Task2- A **encore model with ocl** constrains, operation and derived fields for the domain smart farm.
+  ##Task2- A **encore model with ocl** constrains, operation and derived fields for the domain smart farm.
   1) Here we have a root class Farm.
   2) Each farm contains Crates, AI, Camera and Drones.
   3) Each crate has information about the camera, drone, ai which are derived using ocl.
