@@ -5,10 +5,11 @@
   Himanshu Pandey**
   
  The Repository consists of different task assigned during The **MDE course at University of L'aquila**, for se4gd masters course.
-  ##Task1- Implimentation of a domain language for Managing a smart farm details Using **MPS**
+  ## Assignment 1
+  It deals with implimentation of a domain language for Managing a smart farm details Using **MPS** software.
   1) The model has following Concepts-
      Farm, Drone, Camera, Sensor, Water(sensor), Soil(sensor), Temperature(sensor),Light, Crop,AI, Crate.
-     
+  
   2) Enum data type-
      LightType, AItype.
      
@@ -18,6 +19,8 @@
   This project has 2 main root elements Farm and the Crates contained by it.
   
   Farm is a single entity linked to multiple Crates.
+  
+  
   
   ## Assignment 2
   This assignments includes creation of Ecore metamodel for The **Domain Smart Farm**.
@@ -31,7 +34,7 @@
        - AI
        - TemepratureSensor
        - SoilSensor
-       - Humidity
+       - HumiditySensor
        - Light
        - Name
        - Crop
@@ -47,18 +50,35 @@
      - invariant SufficientSpace: which doesnot let user to define more crates than the farmsize (defined in the MaxCrates attribute).
      - Property workingAI , workingDrones and workingCameras which give crate information about the respective component also links them together.
      - operations operation arePlantsAlive() which lets user check the health of the plants.
-     - invariant arePlantsAlive, isSoiltooAcidic, isSoiltooBasic, isHumiditytooless, isHumiditytoomuch which help in maintaining certain standards for our sensors.  
-  ##Task3- 
-  1) Here we modify our model made in the task2.
-  2) In the first part of the task we use ATL to perform model to medel transformation (version1 to version2).
-  3) In the second part of the task we use acceleo to generate html pages for out tranfromed model.
+     - invariant arePlantsAlive, isSoiltooAcidic, isSoiltooBasic, isHumiditytooless, isHumiditytoomuch which help in maintaining certain standards for our sensors. 
+ **How to Run?
+ Open Eclipse-> open the file A2-> open the folder mde.smartFarming->model->smartFarming.ecore**
+ 
+  ## Assignment 3 
+  This is divided into 2 tasks.
+  ### Modification of model in assginment 2 and doing model to model conversion of Smartfarm to it's modified version.( using ATL)
+  ### Generation of HTML documentation for the modified model using  model-to-text transformation. (using Acceleo)
+  1) Modifications-
+     -**Deletion** of TemepratureSensor, SoilSensor, HumiditySensor and their **Replacement by** CrateSensor metaclass
+     -**Changing** AI to MonitoringOS.
+     - Adding and deleting various attributes including renaming some.
+  3) After the  we create a **ATL** project to perform model to model transformation.
+**How to run?
+Open A3 zip file and run in eclipse-> register models in mde.smartFarming and mde.smartFarmin2->open project Farm.Version.transformation- run versioncontrol.atl file**.
+  5) In the second part of the task we use **Acceleo** to generate html documentation for out modified  model.
+**How to run?
+Open HTMLmodel projec->src folder-> HTMLmodel.main->run generate.mtl **
   
-  ##Task4-
+  ## Assignment4-
+  This is divided into 2 parts -
+  ### Creating a concrete syntax of the model defined in Assignment 2 using xText
+  ### Defining a Graphical editor using Sirius 
   1) We first generate a text editor for our model (from Task 2) using Xtext.
    To run the project- 
-   a) Expand the zip file A4.1 and run the folder containing the main extext file as a eclipse instance.
-   b) In the new instance open A4.1.2 and run the farm project.
+   - Expand the zip file A4.1 and run the org.xtext.example.mydsl project  as a eclipse instance.
+   - In the new instance open A4.1.2 -> Farm project-> open the Farm1.mydsl file.
   2) In the second project we create a graphical editor for our model.
-   a) Open the zip file A4.2 and run the main ecore model in a eclipse instance.
-   b) On this instance open the file A4.2.2 and run the project.
+   - Open the zip file A4.2 and run the mde.smartFarming project as a eclipse instance.
+   - On this instance open the file A4.2.2 which contains smartfarming.samples and my.project.design projects.
+   - select viewpoin for smartfarming.samples and create a new diagram for the instance of mde.smartfarming by either opeining the Farm instance or throughrepresentation.aird file
 
