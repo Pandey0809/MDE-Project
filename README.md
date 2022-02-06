@@ -6,7 +6,7 @@
   
  The Repository consists of different task assigned during The **MDE course at University of L'aquila**, for se4gd masters course.
   ## Assignment 1
-  It deals with implimentation of a domain language for Managing a smart farm details Using **MPS** software.
+  ### It deals with implimentation of a domain language for Managing a smart farm details Using **MPS** software.
   1) The model has following Concepts-
      Farm, Drone, Camera, Sensor, Water(sensor), Soil(sensor), Temperature(sensor),Light, Crop,AI, Crate.
   
@@ -23,9 +23,9 @@
   
   
   ## Assignment 2
-  This assignments includes creation of Ecore metamodel for The **Domain Smart Farm**.
+  ### This assignments includes creation of Ecore metamodel for The **Domain Smart Farm**.
   The main goal here is to provide the user a way to manage the contents of the farm in a modular fashion.
-  ### For this task we considor a smart farm which has Multiple crates of crops stacked at top of each other to save space and improve efficiency
+   For this task we considor a smart farm which has Multiple crates of crops stacked at top of each other to save space and improve efficiency
   1) **Metaclasses**
        - Farm
        - Crate
