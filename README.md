@@ -19,19 +19,41 @@
   
   Farm is a single entity linked to multiple Crates.
   
-  ##Task2- A **encore model with ocl** constrains, operation and derived fields for the domain smart farm.
-  1) Here we have a root class Farm.
-  2) Each farm contains Crates, AI, Camera and Drones.
-  3) Each crate has information about the camera, drone, ai which are derived using ocl.
-  4) Each crate also contain a crop and a light for giving energy to the crop and the related sensors for monitoring the crate.
-  5) We have used multiple emfatic and ocl concepts in this projects like enum data type,
-        constraints and query operations over values of different sensors. 
-  Task3- 
+  ## Assignment 2
+  This assignments includes creation of Ecore metamodel for The **Domain Smart Farm**.
+  The main goal here is to provide the user a way to manage the contents of the farm in a modular fashion.
+  ### For this task we considor a smart farm which has Multiple crates of crops stacked at top of each other to save space and improve efficiency
+  1) **Metaclasses**
+       - Farm
+       - Crate
+       - Drone
+       - Camera
+       - AI
+       - TemepratureSensor
+       - SoilSensor
+       - Humidity
+       - Light
+       - Name
+       - Crop
+       - Crateid
+  2) Here the root metaclass is **Farm** and it contains the other metaclass except for light, crop and all the sensors.
+  3) The Second important metaclass is **Crate** which hosts all the sensors,crops and lights.
+  4) Apart from these our model has two 2 Enum data types (typelight and Croptype) and a super class Name.
+  5) Also Each metaclass has their respective attributes like - Crop has a attribut crop which is type CropType ( a Enum to allow the user to choose from available list of crops).
+  6) To further imporve our metalmodel we use **OCL**.
+  7) Each crate has information about the camera, drone, ai which are derived using ocl.
+  9) Using OCL we add different constraints and query operations over values of different sensors. These include
+     - operation isSpaceaAvailable(): This checks if there is space in the farm for adding more crates.
+     - invariant SufficientSpace: which doesnot let user to define more crates than the farmsize (defined in the MaxCrates attribute).
+     - Property workingAI , workingDrones and workingCameras which give crate information about the respective component also links them together.
+     - operations operation arePlantsAlive() which lets user check the health of the plants.
+     - invariant arePlantsAlive, isSoiltooAcidic, isSoiltooBasic, isHumiditytooless, isHumiditytoomuch which help in maintaining certain standards for our sensors.  
+  ##Task3- 
   1) Here we modify our model made in the task2.
   2) In the first part of the task we use ATL to perform model to medel transformation (version1 to version2).
   3) In the second part of the task we use acceleo to generate html pages for out tranfromed model.
   
-  Task4-
+  ##Task4-
   1) We first generate a text editor for our model (from Task 2) using Xtext.
    To run the project- 
    a) Expand the zip file A4.1 and run the folder containing the main extext file as a eclipse instance.
