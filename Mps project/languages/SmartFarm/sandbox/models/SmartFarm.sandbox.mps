@@ -79,6 +79,7 @@
     <node concept="2Itp_l" id="4IA_Y$OA0eK" role="2Itp2B">
       <property role="2Itp_k" value="4xCUKRA7n9t/drone" />
     </node>
+    <node concept="2Itp_l" id="7kh76Ptjvr5" role="2Itp2B" />
   </node>
   <node concept="2Ito70" id="4IA_Y$OEtSJ">
     <property role="TrG5h" value="SmartFarmCrate1" />
